@@ -30,6 +30,9 @@
 		F433BD4B23DE2E66003B1DD3 /* DataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F433BD4A23DE2E66003B1DD3 /* DataLoader.swift */; };
 		F433BD4F23DE2F1B003B1DD3 /* SearchDataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F433BD4E23DE2F1B003B1DD3 /* SearchDataLoader.swift */; };
 		F433BD5123DE30B4003B1DD3 /* DetailDataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F433BD5023DE30B4003B1DD3 /* DetailDataLoader.swift */; };
+		F433BD5423DE316A003B1DD3 /* NetworkEngineMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = F433BD5323DE316A003B1DD3 /* NetworkEngineMock.swift */; };
+		F433BD5623DE3198003B1DD3 /* DataLoaderMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = F433BD5523DE3198003B1DD3 /* DataLoaderMock.swift */; };
+		F433BD5923DE31EC003B1DD3 /* DataLoaderTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F433BD5823DE31EC003B1DD3 /* DataLoaderTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +86,9 @@
 		F433BD4A23DE2E66003B1DD3 /* DataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataLoader.swift; sourceTree = "<group>"; };
 		F433BD4E23DE2F1B003B1DD3 /* SearchDataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchDataLoader.swift; sourceTree = "<group>"; };
 		F433BD5023DE30B4003B1DD3 /* DetailDataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailDataLoader.swift; sourceTree = "<group>"; };
+		F433BD5323DE316A003B1DD3 /* NetworkEngineMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkEngineMock.swift; sourceTree = "<group>"; };
+		F433BD5523DE3198003B1DD3 /* DataLoaderMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataLoaderMock.swift; sourceTree = "<group>"; };
+		F433BD5823DE31EC003B1DD3 /* DataLoaderTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataLoaderTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,8 +175,10 @@
 		F433BCF523DE0517003B1DD3 /* Nodes MoviesTests */ = {
 			isa = PBXGroup;
 			children = (
-				F433BD4123DE1F15003B1DD3 /* Resources */,
+				F433BD5223DE3157003B1DD3 /* Mock */,
 				F433BD3E23DE1EA1003B1DD3 /* Model */,
+				F433BD5723DE31D7003B1DD3 /* Data */,
+				F433BD4123DE1F15003B1DD3 /* Resources */,
 				F433BCF623DE0517003B1DD3 /* Nodes_MoviesTests.swift */,
 				F433BCF823DE0517003B1DD3 /* Info.plist */,
 			);
@@ -317,6 +325,23 @@
 				F433BD5023DE30B4003B1DD3 /* DetailDataLoader.swift */,
 			);
 			path = Detail;
+			sourceTree = "<group>";
+		};
+		F433BD5223DE3157003B1DD3 /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				F433BD5323DE316A003B1DD3 /* NetworkEngineMock.swift */,
+				F433BD5523DE3198003B1DD3 /* DataLoaderMock.swift */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
+		F433BD5723DE31D7003B1DD3 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				F433BD5823DE31EC003B1DD3 /* DataLoaderTest.swift */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -557,7 +582,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F433BD5423DE316A003B1DD3 /* NetworkEngineMock.swift in Sources */,
 				F433BCF723DE0517003B1DD3 /* Nodes_MoviesTests.swift in Sources */,
+				F433BD5623DE3198003B1DD3 /* DataLoaderMock.swift in Sources */,
+				F433BD5923DE31EC003B1DD3 /* DataLoaderTest.swift in Sources */,
 				F433BD4023DE1EBA003B1DD3 /* ModelSearchTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
