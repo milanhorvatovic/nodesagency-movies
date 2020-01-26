@@ -27,6 +27,9 @@
 		F433BD4423DE1F15003B1DD3 /* search-1.json in Resources */ = {isa = PBXBuildFile; fileRef = F433BD4323DE1F15003B1DD3 /* search-1.json */; };
 		F433BD4623DE259F003B1DD3 /* search-2.json in Resources */ = {isa = PBXBuildFile; fileRef = F433BD4523DE259F003B1DD3 /* search-2.json */; };
 		F433BD4923DE2D75003B1DD3 /* NetworkEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = F433BD4823DE2D75003B1DD3 /* NetworkEngine.swift */; };
+		F433BD4B23DE2E66003B1DD3 /* DataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F433BD4A23DE2E66003B1DD3 /* DataLoader.swift */; };
+		F433BD4F23DE2F1B003B1DD3 /* SearchDataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F433BD4E23DE2F1B003B1DD3 /* SearchDataLoader.swift */; };
+		F433BD5123DE30B4003B1DD3 /* DetailDataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F433BD5023DE30B4003B1DD3 /* DetailDataLoader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +80,9 @@
 		F433BD4323DE1F15003B1DD3 /* search-1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "search-1.json"; sourceTree = "<group>"; };
 		F433BD4523DE259F003B1DD3 /* search-2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "search-2.json"; sourceTree = "<group>"; };
 		F433BD4823DE2D75003B1DD3 /* NetworkEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkEngine.swift; sourceTree = "<group>"; };
+		F433BD4A23DE2E66003B1DD3 /* DataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataLoader.swift; sourceTree = "<group>"; };
+		F433BD4E23DE2F1B003B1DD3 /* SearchDataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchDataLoader.swift; sourceTree = "<group>"; };
+		F433BD5023DE30B4003B1DD3 /* DetailDataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailDataLoader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -201,6 +207,8 @@
 			isa = PBXGroup;
 			children = (
 				F433BD1623DE06D7003B1DD3 /* Main */,
+				F433BD4C23DE2EB2003B1DD3 /* Search */,
+				F433BD4D23DE2F03003B1DD3 /* Detail */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -290,8 +298,25 @@
 			isa = PBXGroup;
 			children = (
 				F433BD4823DE2D75003B1DD3 /* NetworkEngine.swift */,
+				F433BD4A23DE2E66003B1DD3 /* DataLoader.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		F433BD4C23DE2EB2003B1DD3 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				F433BD4E23DE2F1B003B1DD3 /* SearchDataLoader.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		F433BD4D23DE2F03003B1DD3 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				F433BD5023DE30B4003B1DD3 /* DetailDataLoader.swift */,
+			);
+			path = Detail;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -514,11 +539,14 @@
 				F433BD4923DE2D75003B1DD3 /* NetworkEngine.swift in Sources */,
 				F433BD2F23DE0A69003B1DD3 /* ModelService.swift in Sources */,
 				F433BD3C23DE166E003B1DD3 /* ModelServiceSearch.swift in Sources */,
+				F433BD5123DE30B4003B1DD3 /* DetailDataLoader.swift in Sources */,
 				F433BD3723DE0F97003B1DD3 /* ModelServiceMovieResult.swift in Sources */,
 				F433BD3523DE0F2D003B1DD3 /* ModelServiceMovie.swift in Sources */,
 				F433BD1D23DE06D7003B1DD3 /* SceneDelegate.swift in Sources */,
 				F433BD2123DE0A35003B1DD3 /* Error.swift in Sources */,
 				F433BD1C23DE06D7003B1DD3 /* AppDelegate.swift in Sources */,
+				F433BD4F23DE2F1B003B1DD3 /* SearchDataLoader.swift in Sources */,
+				F433BD4B23DE2E66003B1DD3 /* DataLoader.swift in Sources */,
 				F433BD3923DE12EC003B1DD3 /* ModelServiceMovieDetail.swift in Sources */,
 				F433BD3023DE0A69003B1DD3 /* ModelServiceCommon.swift in Sources */,
 				F433BD2C23DE0A69003B1DD3 /* Model.swift in Sources */,
