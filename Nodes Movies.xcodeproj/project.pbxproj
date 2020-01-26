@@ -34,6 +34,7 @@
 		F433BD5623DE3198003B1DD3 /* DataLoaderMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = F433BD5523DE3198003B1DD3 /* DataLoaderMock.swift */; };
 		F433BD5923DE31EC003B1DD3 /* DataLoaderTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F433BD5823DE31EC003B1DD3 /* DataLoaderTest.swift */; };
 		F433BD5C23DE35FA003B1DD3 /* ObservablType+Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = F433BD5B23DE35FA003B1DD3 /* ObservablType+Action.swift */; };
+		F433BD5F23DE3685003B1DD3 /* FavoriteDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F433BD5E23DE3685003B1DD3 /* FavoriteDataProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,6 +92,7 @@
 		F433BD5523DE3198003B1DD3 /* DataLoaderMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataLoaderMock.swift; sourceTree = "<group>"; };
 		F433BD5823DE31EC003B1DD3 /* DataLoaderTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataLoaderTest.swift; sourceTree = "<group>"; };
 		F433BD5B23DE35FA003B1DD3 /* ObservablType+Action.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ObservablType+Action.swift"; sourceTree = "<group>"; };
+		F433BD5E23DE3685003B1DD3 /* FavoriteDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteDataProvider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -218,6 +220,7 @@
 			isa = PBXGroup;
 			children = (
 				F433BD1623DE06D7003B1DD3 /* Main */,
+				F433BD5D23DE366E003B1DD3 /* Favorite */,
 				F433BD4C23DE2EB2003B1DD3 /* Search */,
 				F433BD4D23DE2F03003B1DD3 /* Detail */,
 			);
@@ -353,6 +356,14 @@
 				F433BD5B23DE35FA003B1DD3 /* ObservablType+Action.swift */,
 			);
 			path = Foundation;
+			sourceTree = "<group>";
+		};
+		F433BD5D23DE366E003B1DD3 /* Favorite */ = {
+			isa = PBXGroup;
+			children = (
+				F433BD5E23DE3685003B1DD3 /* FavoriteDataProvider.swift */,
+			);
+			path = Favorite;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -582,6 +593,7 @@
 				F433BD2123DE0A35003B1DD3 /* Error.swift in Sources */,
 				F433BD1C23DE06D7003B1DD3 /* AppDelegate.swift in Sources */,
 				F433BD4F23DE2F1B003B1DD3 /* SearchDataLoader.swift in Sources */,
+				F433BD5F23DE3685003B1DD3 /* FavoriteDataProvider.swift in Sources */,
 				F433BD4B23DE2E66003B1DD3 /* DataLoader.swift in Sources */,
 				F433BD3923DE12EC003B1DD3 /* ModelServiceMovieDetail.swift in Sources */,
 				F433BD3023DE0A69003B1DD3 /* ModelServiceCommon.swift in Sources */,
