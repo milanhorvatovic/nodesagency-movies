@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		35EC5E128A0C4FE8E0339E17 /* Pods_Nodes_MoviesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1302B27B919CFF7F5B6BC79 /* Pods_Nodes_MoviesTests.framework */; };
 		B60883175A723CB20128FF15 /* Pods_Nodes_Movies.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 916A836086117218DB323DF4 /* Pods_Nodes_Movies.framework */; };
+		F429F90B23DEB6CA001693C8 /* FavoriteViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F429F90A23DEB6CA001693C8 /* FavoriteViewController.xib */; };
+		F429F90D23DEB908001693C8 /* ApplicationFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = F429F90C23DEB908001693C8 /* ApplicationFactory.swift */; };
+		F429F90F23DEBA70001693C8 /* UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F429F90E23DEBA70001693C8 /* UITableView.swift */; };
 		F433BCF723DE0517003B1DD3 /* Nodes_MoviesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F433BCF623DE0517003B1DD3 /* Nodes_MoviesTests.swift */; };
 		F433BD0223DE0517003B1DD3 /* Nodes_MoviesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F433BD0123DE0517003B1DD3 /* Nodes_MoviesUITests.swift */; };
 		F433BD1923DE06D7003B1DD3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F433BD1023DE06D7003B1DD3 /* Assets.xcassets */; };
@@ -35,6 +38,11 @@
 		F433BD5923DE31EC003B1DD3 /* DataLoaderTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F433BD5823DE31EC003B1DD3 /* DataLoaderTest.swift */; };
 		F433BD5C23DE35FA003B1DD3 /* ObservablType+Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = F433BD5B23DE35FA003B1DD3 /* ObservablType+Action.swift */; };
 		F433BD5F23DE3685003B1DD3 /* FavoriteDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F433BD5E23DE3685003B1DD3 /* FavoriteDataProvider.swift */; };
+		F433BD6123DE3D63003B1DD3 /* FavoriteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F433BD6023DE3D63003B1DD3 /* FavoriteViewModel.swift */; };
+		F433BD6323DE3D9B003B1DD3 /* FavoriteModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F433BD6223DE3D9B003B1DD3 /* FavoriteModel.swift */; };
+		F433BD6523DE4098003B1DD3 /* FavoriteListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F433BD6423DE4098003B1DD3 /* FavoriteListCell.swift */; };
+		F433BD6723DE4218003B1DD3 /* FavoriteListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F433BD6623DE4218003B1DD3 /* FavoriteListCell.xib */; };
+		F433BD6923DE4328003B1DD3 /* FavoriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F433BD6823DE4328003B1DD3 /* FavoriteViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +69,9 @@
 		916A836086117218DB323DF4 /* Pods_Nodes_Movies.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Nodes_Movies.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0A150E612C89CF21C1C03D0 /* Pods-Nodes Movies.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nodes Movies.debug.xcconfig"; path = "Target Support Files/Pods-Nodes Movies/Pods-Nodes Movies.debug.xcconfig"; sourceTree = "<group>"; };
 		D1302B27B919CFF7F5B6BC79 /* Pods_Nodes_MoviesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Nodes_MoviesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F429F90A23DEB6CA001693C8 /* FavoriteViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavoriteViewController.xib; sourceTree = "<group>"; };
+		F429F90C23DEB908001693C8 /* ApplicationFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationFactory.swift; sourceTree = "<group>"; };
+		F429F90E23DEBA70001693C8 /* UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableView.swift; sourceTree = "<group>"; };
 		F433BCDC23DE0516003B1DD3 /* Nodes Movies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Nodes Movies.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F433BCF223DE0517003B1DD3 /* Nodes MoviesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Nodes MoviesTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F433BCF623DE0517003B1DD3 /* Nodes_MoviesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nodes_MoviesTests.swift; sourceTree = "<group>"; };
@@ -93,6 +104,11 @@
 		F433BD5823DE31EC003B1DD3 /* DataLoaderTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataLoaderTest.swift; sourceTree = "<group>"; };
 		F433BD5B23DE35FA003B1DD3 /* ObservablType+Action.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ObservablType+Action.swift"; sourceTree = "<group>"; };
 		F433BD5E23DE3685003B1DD3 /* FavoriteDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteDataProvider.swift; sourceTree = "<group>"; };
+		F433BD6023DE3D63003B1DD3 /* FavoriteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewModel.swift; sourceTree = "<group>"; };
+		F433BD6223DE3D9B003B1DD3 /* FavoriteModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteModel.swift; sourceTree = "<group>"; };
+		F433BD6423DE4098003B1DD3 /* FavoriteListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteListCell.swift; sourceTree = "<group>"; };
+		F433BD6623DE4218003B1DD3 /* FavoriteListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavoriteListCell.xib; sourceTree = "<group>"; };
+		F433BD6823DE4328003B1DD3 /* FavoriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -232,6 +248,7 @@
 			children = (
 				F433BD1723DE06D7003B1DD3 /* AppDelegate.swift */,
 				F433BD1823DE06D7003B1DD3 /* SceneDelegate.swift */,
+				F429F90C23DEB908001693C8 /* ApplicationFactory.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -354,6 +371,7 @@
 			isa = PBXGroup;
 			children = (
 				F433BD5B23DE35FA003B1DD3 /* ObservablType+Action.swift */,
+				F429F90E23DEBA70001693C8 /* UITableView.swift */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -362,6 +380,12 @@
 			isa = PBXGroup;
 			children = (
 				F433BD5E23DE3685003B1DD3 /* FavoriteDataProvider.swift */,
+				F433BD6223DE3D9B003B1DD3 /* FavoriteModel.swift */,
+				F433BD6023DE3D63003B1DD3 /* FavoriteViewModel.swift */,
+				F433BD6423DE4098003B1DD3 /* FavoriteListCell.swift */,
+				F433BD6623DE4218003B1DD3 /* FavoriteListCell.xib */,
+				F433BD6823DE4328003B1DD3 /* FavoriteViewController.swift */,
+				F429F90A23DEB6CA001693C8 /* FavoriteViewController.xib */,
 			);
 			path = Favorite;
 			sourceTree = "<group>";
@@ -476,6 +500,8 @@
 			files = (
 				F433BD1923DE06D7003B1DD3 /* Assets.xcassets in Resources */,
 				F433BD1A23DE06D7003B1DD3 /* LaunchScreen.storyboard in Resources */,
+				F429F90B23DEB6CA001693C8 /* FavoriteViewController.xib in Resources */,
+				F433BD6723DE4218003B1DD3 /* FavoriteListCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -583,12 +609,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F433BD6523DE4098003B1DD3 /* FavoriteListCell.swift in Sources */,
 				F433BD4923DE2D75003B1DD3 /* NetworkEngine.swift in Sources */,
 				F433BD2F23DE0A69003B1DD3 /* ModelService.swift in Sources */,
 				F433BD3C23DE166E003B1DD3 /* ModelServiceSearch.swift in Sources */,
 				F433BD5123DE30B4003B1DD3 /* DetailDataLoader.swift in Sources */,
 				F433BD3723DE0F97003B1DD3 /* ModelServiceMovieResult.swift in Sources */,
 				F433BD3523DE0F2D003B1DD3 /* ModelServiceMovie.swift in Sources */,
+				F429F90F23DEBA70001693C8 /* UITableView.swift in Sources */,
 				F433BD1D23DE06D7003B1DD3 /* SceneDelegate.swift in Sources */,
 				F433BD2123DE0A35003B1DD3 /* Error.swift in Sources */,
 				F433BD1C23DE06D7003B1DD3 /* AppDelegate.swift in Sources */,
@@ -596,7 +624,11 @@
 				F433BD5F23DE3685003B1DD3 /* FavoriteDataProvider.swift in Sources */,
 				F433BD4B23DE2E66003B1DD3 /* DataLoader.swift in Sources */,
 				F433BD3923DE12EC003B1DD3 /* ModelServiceMovieDetail.swift in Sources */,
+				F433BD6923DE4328003B1DD3 /* FavoriteViewController.swift in Sources */,
+				F433BD6123DE3D63003B1DD3 /* FavoriteViewModel.swift in Sources */,
 				F433BD3023DE0A69003B1DD3 /* ModelServiceCommon.swift in Sources */,
+				F433BD6323DE3D9B003B1DD3 /* FavoriteModel.swift in Sources */,
+				F429F90D23DEB908001693C8 /* ApplicationFactory.swift in Sources */,
 				F433BD2C23DE0A69003B1DD3 /* Model.swift in Sources */,
 				F433BD5C23DE35FA003B1DD3 /* ObservablType+Action.swift in Sources */,
 			);
