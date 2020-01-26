@@ -16,6 +16,16 @@
 		F433BD1C23DE06D7003B1DD3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F433BD1723DE06D7003B1DD3 /* AppDelegate.swift */; };
 		F433BD1D23DE06D7003B1DD3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F433BD1823DE06D7003B1DD3 /* SceneDelegate.swift */; };
 		F433BD2123DE0A35003B1DD3 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = F433BD2023DE0A35003B1DD3 /* Error.swift */; };
+		F433BD2C23DE0A69003B1DD3 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = F433BD2223DE0A69003B1DD3 /* Model.swift */; };
+		F433BD2F23DE0A69003B1DD3 /* ModelService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F433BD2723DE0A69003B1DD3 /* ModelService.swift */; };
+		F433BD3023DE0A69003B1DD3 /* ModelServiceCommon.swift in Sources */ = {isa = PBXBuildFile; fileRef = F433BD2823DE0A69003B1DD3 /* ModelServiceCommon.swift */; };
+		F433BD3523DE0F2D003B1DD3 /* ModelServiceMovie.swift in Sources */ = {isa = PBXBuildFile; fileRef = F433BD3423DE0F2D003B1DD3 /* ModelServiceMovie.swift */; };
+		F433BD3723DE0F97003B1DD3 /* ModelServiceMovieResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = F433BD3623DE0F97003B1DD3 /* ModelServiceMovieResult.swift */; };
+		F433BD3923DE12EC003B1DD3 /* ModelServiceMovieDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = F433BD3823DE12EC003B1DD3 /* ModelServiceMovieDetail.swift */; };
+		F433BD3C23DE166E003B1DD3 /* ModelServiceSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = F433BD3B23DE166E003B1DD3 /* ModelServiceSearch.swift */; };
+		F433BD4023DE1EBA003B1DD3 /* ModelSearchTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F433BD3F23DE1EBA003B1DD3 /* ModelSearchTest.swift */; };
+		F433BD4423DE1F15003B1DD3 /* search-1.json in Resources */ = {isa = PBXBuildFile; fileRef = F433BD4323DE1F15003B1DD3 /* search-1.json */; };
+		F433BD4623DE259F003B1DD3 /* search-2.json in Resources */ = {isa = PBXBuildFile; fileRef = F433BD4523DE259F003B1DD3 /* search-2.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +65,16 @@
 		F433BD1723DE06D7003B1DD3 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F433BD1823DE06D7003B1DD3 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		F433BD2023DE0A35003B1DD3 /* Error.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
+		F433BD2223DE0A69003B1DD3 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		F433BD2723DE0A69003B1DD3 /* ModelService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelService.swift; sourceTree = "<group>"; };
+		F433BD2823DE0A69003B1DD3 /* ModelServiceCommon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelServiceCommon.swift; sourceTree = "<group>"; };
+		F433BD3423DE0F2D003B1DD3 /* ModelServiceMovie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelServiceMovie.swift; sourceTree = "<group>"; };
+		F433BD3623DE0F97003B1DD3 /* ModelServiceMovieResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelServiceMovieResult.swift; sourceTree = "<group>"; };
+		F433BD3823DE12EC003B1DD3 /* ModelServiceMovieDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelServiceMovieDetail.swift; sourceTree = "<group>"; };
+		F433BD3B23DE166E003B1DD3 /* ModelServiceSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelServiceSearch.swift; sourceTree = "<group>"; };
+		F433BD3F23DE1EBA003B1DD3 /* ModelSearchTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelSearchTest.swift; sourceTree = "<group>"; };
+		F433BD4323DE1F15003B1DD3 /* search-1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "search-1.json"; sourceTree = "<group>"; };
+		F433BD4523DE259F003B1DD3 /* search-2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "search-2.json"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +160,8 @@
 		F433BCF523DE0517003B1DD3 /* Nodes MoviesTests */ = {
 			isa = PBXGroup;
 			children = (
+				F433BD4123DE1F15003B1DD3 /* Resources */,
+				F433BD3E23DE1EA1003B1DD3 /* Model */,
 				F433BCF623DE0517003B1DD3 /* Nodes_MoviesTests.swift */,
 				F433BCF823DE0517003B1DD3 /* Info.plist */,
 			);
@@ -192,6 +214,8 @@
 		F433BD1E23DE0A35003B1DD3 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				F433BD2223DE0A69003B1DD3 /* Model.swift */,
+				F433BD2323DE0A69003B1DD3 /* Service */,
 				F433BD1F23DE0A35003B1DD3 /* Error */,
 			);
 			path = Model;
@@ -203,6 +227,60 @@
 				F433BD2023DE0A35003B1DD3 /* Error.swift */,
 			);
 			path = Error;
+			sourceTree = "<group>";
+		};
+		F433BD2323DE0A69003B1DD3 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				F433BD2723DE0A69003B1DD3 /* ModelService.swift */,
+				F433BD2823DE0A69003B1DD3 /* ModelServiceCommon.swift */,
+				F433BD3323DE0F0C003B1DD3 /* Movie */,
+				F433BD3A23DE1652003B1DD3 /* Search */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		F433BD3323DE0F0C003B1DD3 /* Movie */ = {
+			isa = PBXGroup;
+			children = (
+				F433BD3423DE0F2D003B1DD3 /* ModelServiceMovie.swift */,
+				F433BD3623DE0F97003B1DD3 /* ModelServiceMovieResult.swift */,
+				F433BD3823DE12EC003B1DD3 /* ModelServiceMovieDetail.swift */,
+			);
+			path = Movie;
+			sourceTree = "<group>";
+		};
+		F433BD3A23DE1652003B1DD3 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				F433BD3B23DE166E003B1DD3 /* ModelServiceSearch.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		F433BD3E23DE1EA1003B1DD3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F433BD3F23DE1EBA003B1DD3 /* ModelSearchTest.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F433BD4123DE1F15003B1DD3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F433BD4223DE1F15003B1DD3 /* Model */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		F433BD4223DE1F15003B1DD3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F433BD4323DE1F15003B1DD3 /* search-1.json */,
+				F433BD4523DE259F003B1DD3 /* search-2.json */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -322,6 +400,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F433BD4623DE259F003B1DD3 /* search-2.json in Resources */,
+				F433BD4423DE1F15003B1DD3 /* search-1.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -420,9 +500,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F433BD2F23DE0A69003B1DD3 /* ModelService.swift in Sources */,
+				F433BD3C23DE166E003B1DD3 /* ModelServiceSearch.swift in Sources */,
+				F433BD3723DE0F97003B1DD3 /* ModelServiceMovieResult.swift in Sources */,
+				F433BD3523DE0F2D003B1DD3 /* ModelServiceMovie.swift in Sources */,
 				F433BD1D23DE06D7003B1DD3 /* SceneDelegate.swift in Sources */,
 				F433BD2123DE0A35003B1DD3 /* Error.swift in Sources */,
 				F433BD1C23DE06D7003B1DD3 /* AppDelegate.swift in Sources */,
+				F433BD3923DE12EC003B1DD3 /* ModelServiceMovieDetail.swift in Sources */,
+				F433BD3023DE0A69003B1DD3 /* ModelServiceCommon.swift in Sources */,
+				F433BD2C23DE0A69003B1DD3 /* Model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -431,6 +518,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F433BCF723DE0517003B1DD3 /* Nodes_MoviesTests.swift in Sources */,
+				F433BD4023DE1EBA003B1DD3 /* ModelSearchTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

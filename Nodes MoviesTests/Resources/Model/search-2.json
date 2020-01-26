@@ -1,0 +1,92 @@
+{
+    "page": 1,
+    "total_results": 5,
+    "total_pages": 1,
+    "results": [
+        {
+            "popularity": 37.275,
+            "vote_count": 17259,
+            "video": false,
+            "poster_path": "\/d5iIlFn5s0ImszYzBPb8JPIfbXD.jpg",
+            "id": 680,
+            "adult": false,
+            "backdrop_path": "\/suaEOtk1N1sgg2MTM7oZd2cfVp3.jpg",
+            "original_language": "en",
+            "original_title": "Pulp Fiction",
+            "genre_ids": [
+                80,
+                53
+            ],
+            "title": "Pulp Fiction",
+            "vote_average": 8.5,
+            "overview": "A burger-loving hit man, his philosophical partner, a drug-addled gangster's moll and a washed-up boxer converge in this sprawling, comedic crime caper. Their adventures unfurl in three stories that ingeniously trip back and forth in time.",
+            "release_date": "1994-09-10"
+        },
+        {
+            "popularity": 0.6,
+            "id": 109005,
+            "video": false,
+            "vote_count": 0,
+            "vote_average": 0,
+            "title": "Pulp Fiction Art",
+            "release_date": "2005-01-01",
+            "original_language": "en",
+            "original_title": "Pulp Fiction Art",
+            "genre_ids": [
+                99
+            ],
+            "backdrop_path": null,
+            "adult": false,
+            "overview": "A guilty pleasure of the mid-20th century, pulp fiction magazines were often defined less by their contents than by their provocative covers. This documentary explores the shocking art that brought life to these lurid publications. Filmmaker Jamie McDonald delves into the collection of art historian Robert Lesser, shedding light on this nearly forgotten art form and the ways it impacted popular culture.",
+            "poster_path": "\/yqbnCy6YCc9VY8cnkHGEgiylXey.jpg"
+        },
+        {
+            "popularity": 1.404,
+            "id": 619836,
+            "video": false,
+            "vote_count": 2,
+            "vote_average": 7,
+            "title": "Pulp Fiction: The Facts",
+            "release_date": "2002-08-20",
+            "original_language": "en",
+            "original_title": "Pulp Fiction: The Facts",
+            "genre_ids": [],
+            "backdrop_path": null,
+            "adult": false,
+            "overview": "A series of interviews talking about Tarantino's early days and how he got to Pulp Fiction.",
+            "poster_path": null
+        },
+        {
+            "popularity": 0.6,
+            "id": 295641,
+            "video": false,
+            "vote_count": 1,
+            "vote_average": 4,
+            "title": "Pulp Fiction: the Golden Age of Storytelling",
+            "release_date": "2009-01-01",
+            "original_language": "en",
+            "original_title": "Pulp Fiction: the Golden Age of Storytelling",
+            "genre_ids": [],
+            "backdrop_path": null,
+            "adult": false,
+            "overview": "This program profiles writers of the 20s, 30s, and 40s, known as the Pulp Fiction-era. These writers created the iconic characters who live on today in our collective hearts and imaginations. It has even been estimated that 90-95% of the top blockbusters in Hollywood movies, were based on the stories from the Pulp Fiction-era.",
+            "poster_path": null
+        },
+        {
+            "popularity": 0.6,
+            "id": 323819,
+            "video": false,
+            "vote_count": 1,
+            "vote_average": 4,
+            "title": "UFOTV Presents: Pulp Fiction: The Golden Age of Storytelling",
+            "release_date": "2010-01-01",
+            "original_language": "en",
+            "original_title": "UFOTV Presents: Pulp Fiction: The Golden Age of Storytelling",
+            "genre_ids": [],
+            "backdrop_path": null,
+            "adult": false,
+            "overview": "Discover the true history of the era of pulp fiction and the golden age of science fiction, fantasy and adventure. Pulp fiction, named for the low quality paper on which the stories were printed, blossomed in the early twentieth century. After WWI and the Great Depression, audiences sought tales with strong heroes, exciting adventures and alien encounters. This entertaining documentary traces the golden years of pulps, beginning in the 1920's, by highlighting numerous writers including Erle Stanley Gardner and Edgar Rice Burroughs. Popular and prolific authors Ray Bradbury and Frederik Pohl recall the days of nominal pay, short deadlines, and the insatiable demand for copy. Special coverage is given to the original cover art that defined pulp, featuring beautiful women, space creatures and blazing weapons.",
+            "poster_path": "\/iU0Rnw8R0fehqE4lN8GXboCJYOM.jpg"
+        }
+    ]
+}
