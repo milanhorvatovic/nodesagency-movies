@@ -9,12 +9,21 @@
 import UIKit
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder {
 
+    var window: UIWindow?
+    var context: Application.Context?
 
+}
+
+extension AppDelegate: UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        if #available(iOS 13.0, *) { }
+        else {
+            (self.window, self.context) = Application.Factory.createApplication()
+        }
         return true
     }
 

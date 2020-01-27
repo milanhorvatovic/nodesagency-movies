@@ -1,0 +1,400 @@
+{
+    "page": 1,
+    "total_results": 23,
+    "total_pages": 2,
+    "results": [
+        {
+            "popularity": 19.307,
+            "vote_count": 7707,
+            "video": false,
+            "poster_path": "\/q0R4crx2SehcEEQEkYObktdeFy.jpg",
+            "id": 211672,
+            "adult": false,
+            "backdrop_path": "\/wiSIfl9FnXYGXzUKji7Muc3Oj3o.jpg",
+            "original_language": "en",
+            "original_title": "Minions",
+            "genre_ids": [
+                12,
+                16,
+                35,
+                10751
+            ],
+            "title": "Minions",
+            "vote_average": 6.4,
+            "overview": "Minions Stuart, Kevin and Bob are recruited by Scarlet Overkill, a super-villain who, alongside her inventor husband Herb, hatches a plot to take over the world.",
+            "release_date": "2015-06-17"
+        },
+        {
+            "popularity": 8.452,
+            "vote_count": 145,
+            "video": false,
+            "poster_path": "\/bapLpnoV3PUbgcZNDwg6Hxe75HI.jpg",
+            "id": 229407,
+            "adult": false,
+            "backdrop_path": "\/eAKzsYVHiC0bSNudVo9IgREurmm.jpg",
+            "original_language": "en",
+            "original_title": "Minions: Puppy",
+            "genre_ids": [
+                16,
+                35,
+                878,
+                10751
+            ],
+            "title": "Minions: Puppy",
+            "vote_average": 7.3,
+            "overview": "A Minion, seeing many owners walk their dogs, wants a puppy of his own. He tries to leash a ladybug but fails. Luckily, a UFO that sweeps away the ladybug somehow agrees to become a Puppy.",
+            "release_date": "2013-12-10"
+        },
+        {
+            "popularity": 7.818,
+            "vote_count": 111,
+            "video": false,
+            "poster_path": "\/nXfdj2JCvLZIPj9jYTFqopQMMsR.jpg",
+            "id": 229408,
+            "adult": false,
+            "backdrop_path": "\/zez1YZjZ8rvFtJYXQshTCCW2cPp.jpg",
+            "original_language": "en",
+            "original_title": "Minions: Training Wheels",
+            "genre_ids": [
+                16,
+                35,
+                10751
+            ],
+            "title": "Minions: Training Wheels",
+            "vote_average": 7.2,
+            "overview": "Margo, Edith, and Agnes spot an ice cream truck.The three of them go after the truck but Agnes falls as she attempts to pedal to the truck. The Minions, seeing her so upset by this, decide to build her a unicorn-themed motorcycle. Agnes goes for a little ride around town.",
+            "release_date": "2013-12-10"
+        },
+        {
+            "popularity": 7.179,
+            "vote_count": 110,
+            "video": false,
+            "poster_path": "\/oKVtq8SvLaybXC9oofod4uLRfyW.jpg",
+            "id": 403052,
+            "adult": false,
+            "backdrop_path": "\/2r2pw6qR9E84t21NHxbYXzoEFpi.jpg",
+            "original_language": "en",
+            "original_title": "Mower Minions",
+            "genre_ids": [
+                16,
+                35
+            ],
+            "title": "Mower Minions",
+            "vote_average": 6.5,
+            "overview": "The Minions need to raise $20 to purchase an as seen on TV banana blender. So they take up lawn mowing at an old folks home, with hilarious antics!",
+            "release_date": "2016-07-08"
+        },
+        {
+            "popularity": 8.596,
+            "vote_count": 123,
+            "video": false,
+            "poster_path": "\/u1gyqMqRvdwj49vsBLRBGBs4Yoi.jpg",
+            "id": 54559,
+            "adult": false,
+            "backdrop_path": "\/8BueE3xOMMd2Z2ix6ayqj2uPIGL.jpg",
+            "original_language": "en",
+            "original_title": "Minions: Orientation Day",
+            "genre_ids": [
+                16,
+                35,
+                10751
+            ],
+            "title": "Minions: Orientation Day",
+            "vote_average": 6.9,
+            "overview": "With so many jobs to choose from, the Minions have to make serious decisions after watching an 'Initiation Video'. What could go wrong?!",
+            "release_date": "2010-12-13"
+        },
+        {
+            "popularity": 6.844,
+            "id": 438148,
+            "video": false,
+            "vote_count": 0,
+            "vote_average": 0,
+            "title": "Minions: The Rise of Gru",
+            "release_date": "2020-06-11",
+            "original_language": "en",
+            "original_title": "Minions: The Rise of Gru",
+            "genre_ids": [
+                10751,
+                16,
+                28,
+                12,
+                35
+            ],
+            "backdrop_path": "\/zIeUmWooYkG89tkqMNSULTC1SgD.jpg",
+            "adult": false,
+            "overview": "The continuation of the adventures of the Minions, always in search of a tyrannical leader.",
+            "poster_path": "\/8L7Dl045OIAyGiHPATJLPIrnmCB.jpg"
+        },
+        {
+            "popularity": 1.607,
+            "id": 375186,
+            "video": false,
+            "vote_count": 7,
+            "vote_average": 4.9,
+            "title": "Minions - Jingle Bells",
+            "release_date": "2014-12-11",
+            "original_language": "en",
+            "original_title": "Minions - Jingle Bells",
+            "genre_ids": [],
+            "backdrop_path": "\/5NuuBmwbNzBEIlOHPPso3LcIz12.jpg",
+            "adult": false,
+            "overview": "Minions singing Jingle Bells.",
+            "poster_path": "\/2fmLYPOWsJ66XllnqV5L4fHwg0o.jpg"
+        },
+        {
+            "popularity": 2.483,
+            "id": 327781,
+            "video": false,
+            "vote_count": 7,
+            "vote_average": 5.7,
+            "title": "Dark Minions",
+            "release_date": "2013-04-19",
+            "original_language": "en",
+            "original_title": "Dark Minions",
+            "genre_ids": [
+                878,
+                16,
+                35
+            ],
+            "backdrop_path": null,
+            "adult": false,
+            "overview": "Two slackers try to make a paycheck working an intergalactic warship.",
+            "poster_path": "\/s228fOCrB4sgJjMnnMK33AybaE2.jpg"
+        },
+        {
+            "popularity": 1.4,
+            "vote_count": 8,
+            "video": false,
+            "poster_path": "\/lS6ek8S3xDPhoG7dAUVANrmpkVs.jpg",
+            "id": 360848,
+            "adult": false,
+            "backdrop_path": "\/zKDDcqXYIBvsW5zutKigk85wKup.jpg",
+            "original_language": "en",
+            "original_title": "Minions: Movie Auditions",
+            "genre_ids": [],
+            "title": "Minions: Movie Auditions",
+            "vote_average": 4.1,
+            "overview": "",
+            "release_date": "2013-01-01"
+        },
+        {
+            "popularity": 1.4,
+            "id": 440769,
+            "video": true,
+            "vote_count": 16,
+            "vote_average": 6.6,
+            "title": "Minions: 3 Mini-Movie Collection",
+            "release_date": "2016-03-25",
+            "original_language": "en",
+            "original_title": "Minions: 3 Mini-Movie Collection",
+            "genre_ids": [
+                10751,
+                16,
+                12,
+                35
+            ],
+            "backdrop_path": "\/7bBOpBMTf0OfjZRLlWZPbPrJkHW.jpg",
+            "adult": false,
+            "overview": "The Minions are back along with some new friends in three hilariously fun short films: Competition, Cro Minion, and Binky Nelson Unpacified.",
+            "poster_path": "\/yoWytTZRJjGXhkRcxVBvnOHKX85.jpg"
+        },
+        {
+            "popularity": 1.008,
+            "id": 295987,
+            "video": false,
+            "vote_count": 1,
+            "vote_average": 5,
+            "title": "The Minions",
+            "release_date": "2014-10-30",
+            "original_language": "en",
+            "original_title": "The Minions",
+            "genre_ids": [
+                9648,
+                27
+            ],
+            "backdrop_path": null,
+            "adult": false,
+            "overview": "William stands at the window telling Abigail his story of walking down 'the witches' path. The unseen spectral Abigail taunts William suggesting that he walked down the path hoping to see her. William does not contradict her, but instead recalls that just as he thought he had made it past, 'and then the girls appeared'. As the story continues in flashback, William discovers two drunk girls - Sarah and the very wasted Katrina - who ask for his assistance. Seeing the helplessness of their situation, William decides to help walk the girls home. William is slowly drawn in by Katrina first by her mindlessly echoing of 'Love me' and then by her demanding a kiss. William gives her a kiss at first reluctantly and then more passionately at her urging. Abigail torments the conflicted William telling him that the girls are really minions of the witches. As the trio approach Katrina's apartment, Sarah can only watch in fear as William becomes more physically possessive of Katrina.",
+            "poster_path": "\/5SqA7iyEHbA1UAizvs64MjibFHR.jpg"
+        },
+        {
+            "popularity": 0.6,
+            "id": 573729,
+            "video": false,
+            "vote_count": 0,
+            "vote_average": 0,
+            "title": "Alice u l Minions fil Pajjiz tal Meravilji",
+            "release_date": "2016-12-25",
+            "original_language": "mt",
+            "original_title": "Alice u l Minions fil Pajjiz tal Meravilji",
+            "genre_ids": [
+                35
+            ],
+            "backdrop_path": null,
+            "adult": false,
+            "overview": "",
+            "poster_path": "\/v5mM7mBfb6NrSSBgwzKpva7iQZD.jpg"
+        },
+        {
+            "popularity": 5.535,
+            "vote_count": 55,
+            "video": false,
+            "poster_path": "\/d7wrcnERHpa6fA3rhvTllIitGRm.jpg",
+            "id": 366142,
+            "adult": false,
+            "backdrop_path": "\/rsxhLIqVwMxlas5QoXSHcahPyOa.jpg",
+            "original_language": "en",
+            "original_title": "Competition",
+            "genre_ids": [
+                16,
+                10751
+            ],
+            "title": "Competition",
+            "vote_average": 6.1,
+            "overview": "Two minions working in a bomb lab get competitive.  Short #1 from the 'Minions: 3 Mini-Movie Collection'.",
+            "release_date": "2015-11-04"
+        },
+        {
+            "popularity": 11.867,
+            "id": 54553,
+            "video": false,
+            "vote_count": 97,
+            "vote_average": 6.9,
+            "title": "Home Makeover",
+            "release_date": "2010-12-13",
+            "original_language": "en",
+            "original_title": "Home Makeover",
+            "genre_ids": [
+                16,
+                35,
+                10751
+            ],
+            "backdrop_path": "\/43TK5GtHUiPelQpnSX0bl9ONLh0.jpg",
+            "adult": false,
+            "overview": "The Minions have to make Gru's home safe for the children, before Child Services arrive!",
+            "poster_path": "\/uRlT6hzUE6pMCtSsUhKd7OtjD1l.jpg"
+        },
+        {
+            "popularity": 7.187,
+            "id": 366141,
+            "video": false,
+            "vote_count": 44,
+            "vote_average": 6.1,
+            "title": "Cro Minion",
+            "release_date": "2015-11-04",
+            "original_language": "en",
+            "original_title": "Cro Minion",
+            "genre_ids": [
+                16,
+                10751
+            ],
+            "backdrop_path": "\/taCWtbPrBNooPqavM9dktdPYtIj.jpg",
+            "adult": false,
+            "overview": "Two minions have to babysit a little Neanderthal baby.",
+            "poster_path": "\/9SFFtelj7IPSfMUqVCsq03lcl3s.jpg"
+        },
+        {
+            "popularity": 9.645,
+            "vote_count": 191,
+            "video": false,
+            "poster_path": "\/afIcxtzw37hunY6VkQw0DqKslO7.jpg",
+            "id": 54551,
+            "adult": false,
+            "backdrop_path": "\/byw8CLHK87KRrLrCcFGf55dRjB6.jpg",
+            "original_language": "en",
+            "original_title": "Banana",
+            "genre_ids": [
+                16,
+                35,
+                10751
+            ],
+            "title": "Banana",
+            "vote_average": 7.1,
+            "overview": "The Minions fight over a delicious banana.. but is that all they want?!",
+            "release_date": "2010-12-13"
+        },
+        {
+            "popularity": 6.937,
+            "vote_count": 85,
+            "video": false,
+            "poster_path": "\/5OqSdTuwFIZpmZL2dP4J7C64wAs.jpg",
+            "id": 229405,
+            "adult": false,
+            "backdrop_path": "\/sB8KE4wg9ijNl0SLG9IyEy2vxOq.jpg",
+            "original_language": "en",
+            "original_title": "Panic in the Mailroom",
+            "genre_ids": [
+                16,
+                35,
+                878,
+                10751
+            ],
+            "title": "Panic in the Mailroom",
+            "vote_average": 6.9,
+            "overview": "Two Minions are busy at work in the mailroom. One of them, bored, decides to throw a box of expired PX-41 samples into its designated chute.",
+            "release_date": "2013-12-10"
+        },
+        {
+            "popularity": 7.953,
+            "vote_count": 13,
+            "video": false,
+            "poster_path": "\/yQN3wqHwvYoYIDFkKQ4QcuNQxoq.jpg",
+            "id": 553903,
+            "adult": false,
+            "backdrop_path": "\/k4fONqniV20vCzuCnFuRD6hGZW0.jpg",
+            "original_language": "en",
+            "original_title": "Yellow Is the New Black",
+            "genre_ids": [
+                16,
+                35,
+                80,
+                10751
+            ],
+            "title": "Yellow Is the New Black",
+            "vote_average": 5.9,
+            "overview": "Short film taking place during the events of Despicable Me 3 (2017).",
+            "release_date": "2018-08-11"
+        },
+        {
+            "popularity": 5.184,
+            "vote_count": 10,
+            "video": false,
+            "poster_path": "\/amZmPAzPh2WAeOC7E30CGn0UxME.jpg",
+            "id": 579524,
+            "adult": false,
+            "backdrop_path": "\/7jzVimxqmwiYjp6cfxEqJ9yPvko.jpg",
+            "original_language": "en",
+            "original_title": "Santa's Little Helpers",
+            "genre_ids": [
+                12,
+                16,
+                35,
+                10751
+            ],
+            "title": "Santa's Little Helpers",
+            "vote_average": 6.7,
+            "overview": "The Minions, having been accidently dropped off at the North Pole, make the most of the situation by trying to become elves.",
+            "release_date": "2019-02-05"
+        },
+        {
+            "popularity": 6.048,
+            "vote_count": 25,
+            "video": false,
+            "poster_path": "\/o9iZuaj8SFnUGQ0NuyPclH6MD2g.jpg",
+            "id": 366143,
+            "adult": false,
+            "backdrop_path": "\/v9VIpUX6vEo7dyTJ7amGHss5q1s.jpg",
+            "original_language": "en",
+            "original_title": "Binky Nelson Unpacified",
+            "genre_ids": [
+                16,
+                10751
+            ],
+            "title": "Binky Nelson Unpacified",
+            "vote_average": 5.7,
+            "overview": "Little baby needs his pacifier, but loses it during a heist in a museum. What will he do?  Short #3 from the 'Minions: 3 Mini-Movie Collection'.",
+            "release_date": "2015-11-04"
+        }
+    ]
+}
