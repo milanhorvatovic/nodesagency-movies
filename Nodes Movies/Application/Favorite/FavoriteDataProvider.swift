@@ -40,7 +40,7 @@ final class DefaultFavoriteDataProvider: FavoriteDataProvider {
         })
     }()
 
-    var unfavoriteAction: Action<Model.Service.Movie.Detail, [Model.Service.Movie.Detail]> {
+    private(set) lazy var unfavoriteAction: Action<Model.Service.Movie.Detail, [Model.Service.Movie.Detail]> = {
         return Action(workFactory: { [unowned self] (movie) -> Observable<[Model.Service.Movie.Detail]> in
             return Observable.just(movie)
                 .withLatestFrom(self.favorited, resultSelector: { ($0, $1) })
@@ -55,7 +55,7 @@ final class DefaultFavoriteDataProvider: FavoriteDataProvider {
                     return movies
                 })
         })
-    }
+    }()
 
     private let disposeBag: DisposeBag
 
@@ -71,6 +71,7 @@ final class DefaultFavoriteDataProvider: FavoriteDataProvider {
             .bind(to: self.favorited)
             .disposed(by: self.disposeBag)
         self.favorited
+            .skip(1)
             .distinctUntilChanged()
             .subscribe(onNext: { [unowned self] (favorited) in
                 do {
@@ -115,7 +116,7 @@ extension DefaultFavoriteDataProvider {
 
     private func load() throws -> [Model.Service.Movie.Detail] {
         let storage = self.storage()
-        guard let data = storage.data(forKey: type(of: self).key) else {
+        guard let data = storage.object(forKey: type(of: self).key) as? Data else {
             return []
         }
         let decoder = JSONDecoder()
@@ -129,6 +130,7 @@ extension DefaultFavoriteDataProvider {
         let data = try encoder.encode(objects)
         storage.set(data,
                     forKey: type(of: self).key)
+        storage.synchronize()
     }
 
 }

@@ -46,6 +46,13 @@ final class FavoriteViewController: UIViewController {
 
         self._disposeBag = DisposeBag()
 
+        self.rx.viewWillAppearObservable
+            .map({ (_) -> Void in
+                return ()
+            })
+            .bind(to: self._viewModel.fetchAction)
+            .disposed(by: self._disposeBag)
+
         self._tableView.register(UINib(nibName: "\(CellType.self)",
                                        bundle: Bundle(for: CellType.self)),
                                  forCellReuseIdentifier: type(of: self)._cellIdentifier)
@@ -63,6 +70,7 @@ final class FavoriteViewController: UIViewController {
                                         return cell
             }))
         let data = self._viewModel.data
+            .debug("FAVORITE DATA:")
             .share(replay: 1,
                    scope: .forever)
         data
@@ -71,15 +79,27 @@ final class FavoriteViewController: UIViewController {
         if let backgroundView = self._tableView.backgroundView {
             data
                 .map({ (data) -> CGFloat in
-                    return data.isEmpty ? 1.0 : 0.0
+                    guard data.isEmpty == false else {
+                        return 1.0
+                    }
+                    return data
+                        .compactMap({ (section) -> Int in
+                            return section.items.count
+                        })
+                        .reduce(0, +) > 0 ? 0.0 : 1.0
                 })
                 .distinctUntilChanged()
                 .bind(to: backgroundView.rx.alpha)
                 .disposed(by: self._disposeBag)
         }
         self._tableView.rx.modelSelected(ViewModelType.ModelType.self)
-            .subscribe(onNext: strongify(weak: self,
-                                         closure: { (self, item) in
+            .subscribe(onNext: strongify(weak: self, dataSource,
+                                         closure: { (self, dataSource, item) in
+                                            if let index = dataSource.sectionModels.first?.items.firstIndex(of: item) {
+                                                self._tableView.deselectRow(at: IndexPath(row: index,
+                                                                                          section: 0),
+                                                                            animated: true)
+                                            }
                                             self._didSelect(item: item)
             }))
             .disposed(by: self._disposeBag)
@@ -94,6 +114,7 @@ final class FavoriteViewController: UIViewController {
                 self._presentSearch()
             }))
             .disposed(by: self._disposeBag)
+        print(NSHomeDirectory())
     }
 
 }
@@ -111,7 +132,13 @@ extension FavoriteViewController {
     }
 
     private func _didSelect(item: ViewModelType.ModelType) {
-        // TODO: show detail
+        let viewModel = DefaultDetailViewModel(with: item,
+                                               dataLoader: self._context.dataLoader,
+                                               favoriteDataProvider: self._context.favoriteDataProvider)
+        let viewController = DetailViewController(context: self._context,
+                                                  viewModel: viewModel)
+        self.navigationController?.pushViewController(viewController,
+                                                      animated: true)
     }
 
 }

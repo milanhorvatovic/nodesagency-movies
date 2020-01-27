@@ -8,6 +8,8 @@
 
 import UIKit
 
+import Kingfisher
+
 final class FavoriteListCell: UITableViewCell {
 
     typealias ModelType = Model.Service.Movie.Detail
@@ -23,6 +25,7 @@ final class FavoriteListCell: UITableViewCell {
 extension FavoriteListCell {
 
     func configure(with model: ModelType) {
+        self.posterImageView.kf.setImage(with: Resources.Helper.imageUrl(with: model))
         self.titleLabel.text = model.title.localized
         self.voteAverageLabel.text = "\(round(model.vote.average))"
         self.voteCountLabel.text = "\(model.vote.count)"

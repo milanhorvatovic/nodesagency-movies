@@ -91,14 +91,14 @@ final class DefaultDetailViewModel: DetailViewModel {
             .elements
             .withLatestFrom(self.data)
             .filterNil()
-            .debug("FAVORITE:")
+//            .debug("FAVORITE:")
             .bind(to: self.favoritedDataLoader.favoriteAction)
             .disposed(by: self._disposeBag)
         self.unfavoriteAction
             .elements
             .withLatestFrom(self.data)
             .filterNil()
-            .debug("UNFAVORITE:")
+//            .debug("UNFAVORITE:")
             .bind(to: self.favoritedDataLoader.unfavoriteAction)
             .disposed(by: self._disposeBag)
     }

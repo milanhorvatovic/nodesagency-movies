@@ -60,6 +60,8 @@ extension Model.Service.Movie.Detail: Codable {
         try self.title.encode(to: encoder)
         try container.encode(self.overview,
                              forKey: .overview)
+        try self.vote.encode(to: encoder)
+        try self.image.encode(to: encoder)
         try container.encode(self.releaseDate,
                              forKey: .releaseDate)
     }

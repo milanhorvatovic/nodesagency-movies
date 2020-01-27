@@ -81,8 +81,13 @@ final class SearchViewController: UIViewController {
                 .disposed(by: self._disposeBag)
         }
         self._tableView.rx.modelSelected(ViewModelType.ModelType.self)
-            .subscribe(onNext: strongify(weak: self,
-                                         closure: { (self, item) in
+            .subscribe(onNext: strongify(weak: self, dataSource,
+                                         closure: { (self, dataSource, item) in
+                                            if let index = dataSource.sectionModels.first?.items.firstIndex(of: item) {
+                                                self._tableView.deselectRow(at: IndexPath(row: index,
+                                                                                          section: 0),
+                                                                            animated: true)
+                                            }
                                             self._didSelect(item: item)
             }))
             .disposed(by: self._disposeBag)

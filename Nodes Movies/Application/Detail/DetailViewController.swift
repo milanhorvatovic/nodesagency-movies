@@ -28,8 +28,9 @@ final class DetailViewController: UIViewController {
     @IBOutlet private var titleLabel: UILabel!
     @IBOutlet private var voteAverageLabel: UILabel!
     @IBOutlet private var voteCountLabel: UILabel!
-    @IBOutlet private var overview: UITextView!
+    @IBOutlet private var releasedLabel: UILabel!
     @IBOutlet private var favoriteSwitch: UISwitch!
+    @IBOutlet private var overview: UITextView!
 
     init(context: ContextType,
          viewModel: ViewModelType) {
@@ -70,6 +71,15 @@ final class DetailViewController: UIViewController {
             .map({ (model) -> String? in
                 return model?.title.localized
             })
+            .subscribe(onNext: strongify(weak: self,
+                                         closure: { (self, value) in
+                                            self.title = value
+            }))
+            .disposed(by: self._disposeBag)
+        data
+            .map({ (model) -> String? in
+                return model?.title.localized
+            })
             .bind(to: self.titleLabel.rx.text)
             .disposed(by: self._disposeBag)
         data
@@ -89,6 +99,12 @@ final class DetailViewController: UIViewController {
                 return "\(value)"
             })
             .bind(to: self.voteCountLabel.rx.text)
+            .disposed(by: self._disposeBag)
+        data
+            .map({ (model) -> String? in
+                return model?.releaseDate
+            })
+            .bind(to: self.releasedLabel.rx.text)
             .disposed(by: self._disposeBag)
         data
             .map({ (model) -> String? in
