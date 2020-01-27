@@ -14,7 +14,7 @@ import Action
 
 protocol SearchViewModel {
 
-    typealias ModelType = Model.Service.Movie.Detail
+    typealias ModelType = Model.Service.Movie.Result
     typealias ServiceModelType = Model.Service.Search
     typealias SectionType = SearchSection
 

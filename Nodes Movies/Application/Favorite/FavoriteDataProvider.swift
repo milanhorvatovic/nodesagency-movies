@@ -84,7 +84,7 @@ final class DefaultFavoriteDataProvider: FavoriteDataProvider {
     }
 
     func providerFavirites() -> Observable<[Model.Service.Movie.Detail]> {
-        return .just([])
+        return self.favorited.asObservable()
     }
 
 }

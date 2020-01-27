@@ -50,6 +50,10 @@
 		F433BD6923DE4328003B1DD3 /* FavoriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F433BD6823DE4328003B1DD3 /* FavoriteViewController.swift */; };
 		F4B431B523DED21000501B09 /* SearchListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4B431B423DED21000501B09 /* SearchListCell.xib */; };
 		F4B431B723DED75A00501B09 /* ResourcesHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B431B623DED75900501B09 /* ResourcesHelper.swift */; };
+		F4B431B923DEDA4F00501B09 /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B431B823DEDA4F00501B09 /* DetailViewModel.swift */; };
+		F4B431BB23DEDB8900501B09 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B431BA23DEDB8900501B09 /* DetailViewController.swift */; };
+		F4B431BD23DEDD2300501B09 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4B431BC23DEDD2300501B09 /* DetailViewController.xib */; };
+		F4B431BF23DEDE8400501B09 /* UIViewController+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B431BE23DEDE8400501B09 /* UIViewController+Rx.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -123,6 +127,10 @@
 		F433BD6823DE4328003B1DD3 /* FavoriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewController.swift; sourceTree = "<group>"; };
 		F4B431B423DED21000501B09 /* SearchListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchListCell.xib; sourceTree = "<group>"; };
 		F4B431B623DED75900501B09 /* ResourcesHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourcesHelper.swift; sourceTree = "<group>"; };
+		F4B431B823DEDA4F00501B09 /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
+		F4B431BA23DEDB8900501B09 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		F4B431BC23DEDD2300501B09 /* DetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
+		F4B431BE23DEDE8400501B09 /* UIViewController+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Rx.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -367,6 +375,9 @@
 			isa = PBXGroup;
 			children = (
 				F433BD5023DE30B4003B1DD3 /* DetailDataLoader.swift */,
+				F4B431B823DEDA4F00501B09 /* DetailViewModel.swift */,
+				F4B431BA23DEDB8900501B09 /* DetailViewController.swift */,
+				F4B431BC23DEDD2300501B09 /* DetailViewController.xib */,
 			);
 			path = Detail;
 			sourceTree = "<group>";
@@ -393,6 +404,7 @@
 			children = (
 				F433BD5B23DE35FA003B1DD3 /* ObservablType+Action.swift */,
 				F429F90E23DEBA70001693C8 /* UITableView.swift */,
+				F4B431BE23DEDE8400501B09 /* UIViewController+Rx.swift */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -521,6 +533,7 @@
 			files = (
 				F433BD1923DE06D7003B1DD3 /* Assets.xcassets in Resources */,
 				F433BD1A23DE06D7003B1DD3 /* LaunchScreen.storyboard in Resources */,
+				F4B431BD23DEDD2300501B09 /* DetailViewController.xib in Resources */,
 				F429F91B23DEC36E001693C8 /* SearchViewController.xib in Resources */,
 				F4B431B523DED21000501B09 /* SearchListCell.xib in Resources */,
 				F429F90B23DEB6CA001693C8 /* FavoriteViewController.xib in Resources */,
@@ -641,6 +654,8 @@
 				F433BD3523DE0F2D003B1DD3 /* ModelServiceMovie.swift in Sources */,
 				F429F90F23DEBA70001693C8 /* UITableView.swift in Sources */,
 				F429F91923DEC301001693C8 /* SearchViewController.swift in Sources */,
+				F4B431BB23DEDB8900501B09 /* DetailViewController.swift in Sources */,
+				F4B431BF23DEDE8400501B09 /* UIViewController+Rx.swift in Sources */,
 				F4B431B723DED75A00501B09 /* ResourcesHelper.swift in Sources */,
 				F433BD1D23DE06D7003B1DD3 /* SceneDelegate.swift in Sources */,
 				F433BD2123DE0A35003B1DD3 /* Error.swift in Sources */,
@@ -655,6 +670,7 @@
 				F433BD6123DE3D63003B1DD3 /* FavoriteViewModel.swift in Sources */,
 				F433BD3023DE0A69003B1DD3 /* ModelServiceCommon.swift in Sources */,
 				F433BD6323DE3D9B003B1DD3 /* FavoriteModel.swift in Sources */,
+				F4B431B923DEDA4F00501B09 /* DetailViewModel.swift in Sources */,
 				F429F90D23DEB908001693C8 /* ApplicationFactory.swift in Sources */,
 				F433BD2C23DE0A69003B1DD3 /* Model.swift in Sources */,
 				F433BD5C23DE35FA003B1DD3 /* ObservablType+Action.swift in Sources */,

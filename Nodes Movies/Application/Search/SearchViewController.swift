@@ -118,7 +118,13 @@ extension SearchViewController {
     }
 
     private func _didSelect(item: ViewModelType.ModelType) {
-        // TODO: show detail
+        let viewModel = DefaultDetailViewModel(with: item,
+                                               dataLoader: self._context.dataLoader,
+                                               favoriteDataProvider: self._context.favoriteDataProvider)
+        let viewController = DetailViewController(context: self._context,
+                                                  viewModel: viewModel)
+        self.navigationController?.pushViewController(viewController,
+                                                      animated: true)
     }
 
 }
