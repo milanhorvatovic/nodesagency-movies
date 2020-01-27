@@ -12,6 +12,11 @@
 		F429F90B23DEB6CA001693C8 /* FavoriteViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F429F90A23DEB6CA001693C8 /* FavoriteViewController.xib */; };
 		F429F90D23DEB908001693C8 /* ApplicationFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = F429F90C23DEB908001693C8 /* ApplicationFactory.swift */; };
 		F429F90F23DEBA70001693C8 /* UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F429F90E23DEBA70001693C8 /* UITableView.swift */; };
+		F429F91123DEBE97001693C8 /* SearchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F429F91023DEBE97001693C8 /* SearchModel.swift */; };
+		F429F91323DEBED5001693C8 /* SeachViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F429F91223DEBED5001693C8 /* SeachViewModel.swift */; };
+		F429F91523DEC15E001693C8 /* SearchListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F429F91423DEC15E001693C8 /* SearchListCell.swift */; };
+		F429F91923DEC301001693C8 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F429F91823DEC301001693C8 /* SearchViewController.swift */; };
+		F429F91B23DEC36E001693C8 /* SearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F429F91A23DEC36E001693C8 /* SearchViewController.xib */; };
 		F433BCF723DE0517003B1DD3 /* Nodes_MoviesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F433BCF623DE0517003B1DD3 /* Nodes_MoviesTests.swift */; };
 		F433BD0223DE0517003B1DD3 /* Nodes_MoviesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F433BD0123DE0517003B1DD3 /* Nodes_MoviesUITests.swift */; };
 		F433BD1923DE06D7003B1DD3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F433BD1023DE06D7003B1DD3 /* Assets.xcassets */; };
@@ -43,6 +48,8 @@
 		F433BD6523DE4098003B1DD3 /* FavoriteListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F433BD6423DE4098003B1DD3 /* FavoriteListCell.swift */; };
 		F433BD6723DE4218003B1DD3 /* FavoriteListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F433BD6623DE4218003B1DD3 /* FavoriteListCell.xib */; };
 		F433BD6923DE4328003B1DD3 /* FavoriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F433BD6823DE4328003B1DD3 /* FavoriteViewController.swift */; };
+		F4B431B523DED21000501B09 /* SearchListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4B431B423DED21000501B09 /* SearchListCell.xib */; };
+		F4B431B723DED75A00501B09 /* ResourcesHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B431B623DED75900501B09 /* ResourcesHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +79,11 @@
 		F429F90A23DEB6CA001693C8 /* FavoriteViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavoriteViewController.xib; sourceTree = "<group>"; };
 		F429F90C23DEB908001693C8 /* ApplicationFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationFactory.swift; sourceTree = "<group>"; };
 		F429F90E23DEBA70001693C8 /* UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableView.swift; sourceTree = "<group>"; };
+		F429F91023DEBE97001693C8 /* SearchModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchModel.swift; sourceTree = "<group>"; };
+		F429F91223DEBED5001693C8 /* SeachViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeachViewModel.swift; sourceTree = "<group>"; };
+		F429F91423DEC15E001693C8 /* SearchListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchListCell.swift; sourceTree = "<group>"; };
+		F429F91823DEC301001693C8 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		F429F91A23DEC36E001693C8 /* SearchViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchViewController.xib; sourceTree = "<group>"; };
 		F433BCDC23DE0516003B1DD3 /* Nodes Movies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Nodes Movies.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F433BCF223DE0517003B1DD3 /* Nodes MoviesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Nodes MoviesTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F433BCF623DE0517003B1DD3 /* Nodes_MoviesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nodes_MoviesTests.swift; sourceTree = "<group>"; };
@@ -109,6 +121,8 @@
 		F433BD6423DE4098003B1DD3 /* FavoriteListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteListCell.swift; sourceTree = "<group>"; };
 		F433BD6623DE4218003B1DD3 /* FavoriteListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavoriteListCell.xib; sourceTree = "<group>"; };
 		F433BD6823DE4328003B1DD3 /* FavoriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewController.swift; sourceTree = "<group>"; };
+		F4B431B423DED21000501B09 /* SearchListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchListCell.xib; sourceTree = "<group>"; };
+		F4B431B623DED75900501B09 /* ResourcesHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourcesHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -330,6 +344,7 @@
 			children = (
 				F433BD4823DE2D75003B1DD3 /* NetworkEngine.swift */,
 				F433BD4A23DE2E66003B1DD3 /* DataLoader.swift */,
+				F4B431B623DED75900501B09 /* ResourcesHelper.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -338,6 +353,12 @@
 			isa = PBXGroup;
 			children = (
 				F433BD4E23DE2F1B003B1DD3 /* SearchDataLoader.swift */,
+				F429F91023DEBE97001693C8 /* SearchModel.swift */,
+				F429F91223DEBED5001693C8 /* SeachViewModel.swift */,
+				F429F91423DEC15E001693C8 /* SearchListCell.swift */,
+				F4B431B423DED21000501B09 /* SearchListCell.xib */,
+				F429F91823DEC301001693C8 /* SearchViewController.swift */,
+				F429F91A23DEC36E001693C8 /* SearchViewController.xib */,
 			);
 			path = Search;
 			sourceTree = "<group>";
@@ -500,6 +521,8 @@
 			files = (
 				F433BD1923DE06D7003B1DD3 /* Assets.xcassets in Resources */,
 				F433BD1A23DE06D7003B1DD3 /* LaunchScreen.storyboard in Resources */,
+				F429F91B23DEC36E001693C8 /* SearchViewController.xib in Resources */,
+				F4B431B523DED21000501B09 /* SearchListCell.xib in Resources */,
 				F429F90B23DEB6CA001693C8 /* FavoriteViewController.xib in Resources */,
 				F433BD6723DE4218003B1DD3 /* FavoriteListCell.xib in Resources */,
 			);
@@ -617,10 +640,14 @@
 				F433BD3723DE0F97003B1DD3 /* ModelServiceMovieResult.swift in Sources */,
 				F433BD3523DE0F2D003B1DD3 /* ModelServiceMovie.swift in Sources */,
 				F429F90F23DEBA70001693C8 /* UITableView.swift in Sources */,
+				F429F91923DEC301001693C8 /* SearchViewController.swift in Sources */,
+				F4B431B723DED75A00501B09 /* ResourcesHelper.swift in Sources */,
 				F433BD1D23DE06D7003B1DD3 /* SceneDelegate.swift in Sources */,
 				F433BD2123DE0A35003B1DD3 /* Error.swift in Sources */,
 				F433BD1C23DE06D7003B1DD3 /* AppDelegate.swift in Sources */,
+				F429F91523DEC15E001693C8 /* SearchListCell.swift in Sources */,
 				F433BD4F23DE2F1B003B1DD3 /* SearchDataLoader.swift in Sources */,
+				F429F91123DEBE97001693C8 /* SearchModel.swift in Sources */,
 				F433BD5F23DE3685003B1DD3 /* FavoriteDataProvider.swift in Sources */,
 				F433BD4B23DE2E66003B1DD3 /* DataLoader.swift in Sources */,
 				F433BD3923DE12EC003B1DD3 /* ModelServiceMovieDetail.swift in Sources */,
@@ -631,6 +658,7 @@
 				F429F90D23DEB908001693C8 /* ApplicationFactory.swift in Sources */,
 				F433BD2C23DE0A69003B1DD3 /* Model.swift in Sources */,
 				F433BD5C23DE35FA003B1DD3 /* ObservablType+Action.swift in Sources */,
+				F429F91323DEBED5001693C8 /* SeachViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

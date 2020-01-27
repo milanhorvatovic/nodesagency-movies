@@ -61,6 +61,14 @@ def supplementary_pods
   
 end
 
+def ui_pods
+
+  #pod 'Kingfisher', '~> 5.13'
+  pod 'Kingfisher', '5.13.0'
+  #pod 'Kingfisher'
+
+end
+
 def all_pods 
 
     core_pods
@@ -68,6 +76,7 @@ def all_pods
     rx_ext_pods
     network_pods
     supplementary_pods
+    ui_pods
 
 end
 

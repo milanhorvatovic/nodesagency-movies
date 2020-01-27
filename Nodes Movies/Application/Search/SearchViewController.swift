@@ -1,8 +1,8 @@
 //
-//  FavoriteViewController.swift
+//  SearchViewController.swift
 //  Nodes Movies
 //
-//  Created by Milan Horvatovic on 26/01/2020.
+//  Created by Milan Horvatovic on 27/01/2020.
 //  Copyright © 2020 Milan Horvatovic. All rights reserved.
 //
 
@@ -10,22 +10,25 @@ import UIKit
 
 import Strongify
 import RxSwift
+import RxSwiftExt
+import RxOptional
 import RxCocoa
 import RxDataSources
 
-final class FavoriteViewController: UIViewController {
+final class SearchViewController: UIViewController {
 
-    typealias ViewModelType = FavoriteViewModel
-    typealias CellType = FavoriteListCell
+    typealias ViewModelType = SearchViewModel
+    typealias CellType = SearchListCell
     typealias ContextType = Application.Context
 
-    private static let _cellIdentifier: String = "FavoriteListCellIdentifier"
+    private static let _cellIdentifier: String = "SearchListCellIdentifier"
 
     private let _context: ContextType
     private let _viewModel: ViewModelType
     private var _disposeBag: DisposeBag
 
     @IBOutlet private weak var _tableView: UITableView!
+    @IBOutlet private weak var _searchBar: UISearchBar!
 
     init(context: ContextType,
          viewModel: ViewModelType) {
@@ -42,7 +45,7 @@ final class FavoriteViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.navigationItem.title = "Favorited movies"
+        self.navigationItem.title = "Search movies"
 
         self._disposeBag = DisposeBag()
 
@@ -85,28 +88,32 @@ final class FavoriteViewController: UIViewController {
             .disposed(by: self._disposeBag)
         self._tableView.tableFooterView = UIView()
 
-        let searchItem = UIBarButtonItem(barButtonSystemItem: .search,
-                                         target: nil,
-                                         action: nil)
-        self.navigationItem.rightBarButtonItem = searchItem
-        searchItem.rx.tap
+        self._searchBar.rx.text
+            .debounce(.milliseconds(200),
+                      scheduler: MainScheduler.instance)
+            .filterNil()
+            .filterEmpty()
+            .distinctUntilChanged()
+            .bind(to: self._viewModel.fetchAction)
+            .disposed(by: self._disposeBag)
+
+        let barItem = UIBarButtonItem(barButtonSystemItem: .close,
+                                      target: nil,
+                                      action: nil)
+        self.navigationItem.rightBarButtonItem = barItem
+        barItem.rx.tap
             .subscribe(onNext: strongify(weak: self, closure: { (self) in
-                self._presentSearch()
+                self._dismiss()
             }))
             .disposed(by: self._disposeBag)
     }
 
 }
 
-extension FavoriteViewController {
+extension SearchViewController {
 
-    private func _presentSearch() {
-        let viewModel = DefaultSearchViewModel(dataLoader: self._context.dataLoader)
-        let viewController = SearchViewController(context: self._context,
-                                                  viewModel: viewModel)
-        let navigationController = UINavigationController(rootViewController: viewController)
-        self.present(navigationController,
-                     animated: true,
+    private func _dismiss() {
+        self.dismiss(animated: true,
                      completion: nil)
     }
 

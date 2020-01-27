@@ -12,6 +12,7 @@ import UIKit
 class AppDelegate: UIResponder {
 
     var window: UIWindow?
+    var context: Application.Context?
 
 }
 
@@ -21,7 +22,7 @@ extension AppDelegate: UIApplicationDelegate {
         // Override point for customization after application launch.
         if #available(iOS 13.0, *) { }
         else {
-            self.window = ApplicationFactory.createApplication()
+            (self.window, self.context) = Application.Factory.createApplication()
         }
         return true
     }
